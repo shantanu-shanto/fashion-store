@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #FF921C; /* Your primary color */
+    --secondary-color: #ECA427; /* Example for a secondary color */
+}
+
+body {
+    background-color: var(--primary-color); /* Optional to apply the color globally */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/path-to-hero-image.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Card Styles for Top Categories and New Arrivals */
+#top-categories .card, #new-arrivals .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#top-categories .card:hover, #new-arrivals .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    text-align: left;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #FF921C; /* Theme color */
+}
+
+/* Additional Styling */
+.container h2 {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #FF921C; /* Theme color */
+    border-color: #FF921C;
+}
+
+.btn-primary:hover {
+    background-color: #ECA427; /* Slightly lighter */
+    border-color: #ECA427;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Smooth hover effect on buttons */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* General Section Padding */
+section {
+    padding: 3rem 0;
+}
+
+/* Scroll-triggered Animations (AOS/Animate.css) */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+}
+/* Hero Carousel Styles */
+#hero-carousel .carousel-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#hero-carousel .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+/* General Styles for Sections */
+#top-categories,
+#new-arrivals {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Custom font for headings */
+    font-weight: bold;
+    color: #333; /* Darker color for headings */
+}
+
+/* Card Styles */
+.custom-card {
+    border: none; /* Remove default card border */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth scaling effect */
+    overflow: hidden; /* Ensure image doesn't overflow card */
+}
+
+/* Image Styles */
+.card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Cover the area without stretching */
+}
+
+/* Hover Effect for Cards */
+.custom-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #FF921C; /* Custom theme color */
+    border-color: #FF921C; /* Match border color with theme */
+}
+
+.btn-success {
+    background-color: #ECA427; /* Custom theme color */
+    border-color: #ECA427; /* Match border color with theme */
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+}
