@@ -18,7 +18,12 @@ body {
     justify-content: center;
     text-align: center;
 }
-
+.card-img-top {
+    cursor: pointer;
+}
+.card-img-bottom {
+    cursor: pointer;
+}
 /* Card Styles for Top Categories and New Arrivals */
 #top-categories .card, #new-arrivals .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
